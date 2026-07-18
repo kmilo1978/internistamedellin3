@@ -1,0 +1,134 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --color-primary: #1080A0;
+  --color-secondary: #E1F1F6;
+  --color-accent: #E1F1F6;
+  --color-border: #E2E8F0;
+  --color-muted: #F1F5F9;
+  --color-bg: #F8F9FA;
+  --color-text: #1E293B;
+  --color-text-secondary: #475569;
+  --color-text-dark: #0F172A;
+
+  --radius-lg: 2rem;
+  --radius-md: 1.5rem;
+  --radius-sm: 0.75rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-bg text-text;
+    font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    text-rendering: optimizeSpeed;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    @apply text-text-dark;
+    text-wrap: balance;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 4vw, 1.875rem);
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: clamp(1rem, 3vw, 1.125rem);
+    line-height: 1.4;
+  }
+
+  p {
+    line-height: 1.6;
+    @apply text-text-secondary;
+    text-wrap: pretty;
+  }
+
+  .container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    max-width: 1280px;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+    }
+  }
+
+  /* Touch targets minimum 44px */
+  a, button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Exception for inline text links */
+  p a, li a, span a, td a {
+    min-height: unset;
+    min-width: unset;
+  }
+
+  /* Focus visible for accessibility */
+  :focus-visible {
+    outline: 2px solid #1080A0;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  /* Reduce motion for users who prefer it */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+  }
+
+  .medical-gradient {
+    background: linear-gradient(135deg, #1080A0 0%, #0D6E8A 100%);
+  }
+
+  .hero-glow {
+    background: radial-gradient(circle at 30% 20%, rgba(16, 128, 160, 0.15), transparent 50%);
+  }
+
+  /* Prevent images from causing overflow */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
