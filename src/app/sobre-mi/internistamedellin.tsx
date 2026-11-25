@@ -234,7 +234,7 @@ const SobreMiPage = () => {
                   <div className="flex h-28">
                     <div className="w-2/5 relative overflow-hidden">
                       <Image
-                        src="/Equipo-Salud-y-bienestar-integral-Dr.-Willmer-Obregón.jpg"
+                        src="/equipo-salud-y-bienestar-integral-dr-willmer-obregon.jpg"
                         alt="Dr. Willmer Obregón"
                         fill
                         className="object-cover object-center hover:scale-110 transition-transform duration-300"

@@ -17,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified,
       changeFrequency: 'monthly',
       priority: 0.8,
-      images: [`${baseUrl}/Dr.-Willmer-Obregón,-Médico-Internista-en-Medellín.jpg`],
+      images: [`${baseUrl}/dr-willmer-obregon-medico-internista-en-medellin.jpg`],
     },
     {
       url: `${baseUrl}/sobre-mi/testimonios`,

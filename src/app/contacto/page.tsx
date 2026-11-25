@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     url: "https://internistamedellin.com/contacto",
     images: [
       {
-        url: "/Dr.-Willmer-Obregón,-Médico-Internista-en-Medellín.jpg",
+        url: "/dr-willmer-obregon-medico-internista-en-medellin.jpg",
         width: 1200,
         height: 630,
         alt: "Dr. Willmer Obregón, médico internista en Medellín - contacto y citas",

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: "https://internistamedellin.com/sobre-mi",
     images: [
       {
-        url: "/Dr.-Willmer-Obregón,-Médico-Internista-en-Medellín.jpg",
+        url: "/dr-willmer-obregon-medico-internista-en-medellin.jpg",
         width: 1200,
         height: 630,
         alt: "Dr. Willmer Obregón, especialista en medicina interna en Medellín",
@@ -121,7 +121,7 @@ const SobreMiPage = () => {
                 <Image src="/Equipo-de-trabajo-consultorio-willmer-obregon.jpg" alt="Equipo de trabajo del consultorio de medicina interna del Dr. Willmer Obregón en Medellín" fill className="object-cover object-center" sizes="(max-width: 768px) 100vw, 50vw" loading="lazy" />
               </div>
               <div className="relative h-96 rounded-lg overflow-hidden shadow-md bg-white">
-                <Image src="/Dr.-Willmer-Obregón,-Médico-Internista-en-Medellín.jpg" alt="Dr. Willmer Obregón, especialista en medicina interna, en su consultorio en Medellín" fill className="object-cover object-center" sizes="(max-width: 768px) 100vw, 50vw" loading="lazy" />
+                <Image src="/dr-willmer-obregon-medico-internista-en-medellin.jpg" alt="Dr. Willmer Obregón, especialista en medicina interna, en su consultorio en Medellín" fill className="object-cover object-center" sizes="(max-width: 768px) 100vw, 50vw" loading="lazy" />
               </div>
             </div>
           </div>

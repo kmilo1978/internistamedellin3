@@ -110,10 +110,10 @@ const AcidoHialuronicoPage = () => {
           </p>
         </header>
 
-        /* Hero Image */
+        {/* Hero Image */}
         <figure className="relative mb-12 h-[300px] overflow-hidden rounded-[2rem] border-2 border-[#E2E8F0] bg-white/70 shadow-sm md:h-[450px]">
           <Image
-            src="/viscosuplementación-con-ácido-hialurónico.jpg"
+            src="/viscosuplementacion-con-acido-hialuronico.jpg"
             alt="Viscosuplementación con ácido hialurónico para artrosis de rodilla en Medellín"
             fill
             className="object-cover object-center"
